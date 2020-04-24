@@ -30,7 +30,7 @@ export class MCGridComponent implements OnInit ,AfterViewInit {
   }
   public state: DataSourceRequestState = {
     skip: 0,
-    take: 10,
+    take: 14,
 };
 
 public mcStateChange(state: DataStateChangeEvent): void {
