@@ -1,0 +1,28 @@
+
+<div class="page-wrapper" [ngClass]="{'toggled' : getSideBarState()}">
+  <app-sidebar></app-sidebar>
+  <main class="page-content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <h2> <img src="assets/img/angular.png" alt="angular logo" width="70px">MCP Angular Demo</h2>
+                  <hr>
+                  <h4>Member Detail</h4>
+                  <hr>
+                  <!-- <a href="#" class="btn btn-outline-secondary mr-1 mb-1" (click)="toggleSidebar()">Toggle Sidebar</a> -->
+
+              </div>
+
+              <div class="container-fluid">
+                <router-outlet></router-outlet>
+              </div>
+          </div>
+          <!-- <div class="attribution text-center badge badge-warning">
+              Created by <strong>RX Advance</strong>
+            </div> -->
+      </div>
+
+  </main>
+
+
+</div>

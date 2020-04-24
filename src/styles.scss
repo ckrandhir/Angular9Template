@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import '~bootstrap/scss/bootstrap';
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+@import "~@progress/kendo-theme-bootstrap/dist/all.scss";
+ @import "~bootstrap/scss/bootstrap.scss";
+
+ $font-size:4px;
+
+body {
+  font-size: .9rem;
+}
+
+.page-wrapper.toggled .sidebar {
+  left: -200px;
+}
+
+
+
+
+
+
+
+// angular perfect scrollbar style
+.sidebar .ps.ps--scrolling-y>.ps__rail-y,
+.sidebar>.ps.ps--scrolling-x>.ps__rail-x,
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: transparent !important;
+}
+
+.sidebar .ps.ps--active-y>.ps__rail-y:hover,
+.sidebar>.ps.ps--active-y>.ps__rail-y.ps--clicking {
+  width: 10px !important;
+}
+
+.ps__thumb-y {
+  background-color: #fff !important;
+  width: 6px!important;
+  border-radius: 0px!important;
+  opacity: .5;
+
+}
+
+
+.sidebar1 .ps.ps--scrolling-y>.ps__rail-y,
+.sidebar1>.ps.ps--scrolling-x>.ps__rail-x,
+.ps .ps__rail-x:hover,
+.ps .ps__rail-y:hover,
+.ps .ps__rail-x:focus,
+.ps .ps__rail-y:focus,
+.ps .ps__rail-x.ps--clicking,
+.ps .ps__rail-y.ps--clicking {
+  background-color: transparent !important;
+}
+
+.sidebar1 .ps.ps--active-y>.ps__rail-y:hover,
+.sidebar1>.ps.ps--active-y>.ps__rail-y.ps--clicking {
+  width: 10px !important;
+}
+
+
+  //Custom Scroll
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      box-shadow: inset 0 0 5px grey;
+      border-radius: 10px;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }

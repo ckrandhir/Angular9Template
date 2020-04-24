@@ -1,0 +1,46 @@
+.k-grid-content {
+
+    overflow-y: auto!important;
+
+    }
+
+    .k-grid td {
+        white-space: nowrap !important;
+        padding: 3px 8px 3px 8px !important;
+    }
+
+    .k-grid-filter{
+        height: 5px !important;
+    }
+
+    .k-grid th {
+        white-space: nowrap !important;
+        padding: 3px 8px 3px 8px !important;
+        font-weight: bold;
+    }
+
+    .k-grid-pager {
+        padding: 0px!important;
+        height: 25px;;
+    }
+
+
+    .k-pager-numbers .k-link {
+        border-radius: 0;
+        padding: 0px !important;
+        border-width: 1px;
+        border-style: solid;
+    }
+
+    .k-button {
+
+        padding: 0.0rem 0.2rem !important;
+
+    }
+
+button {
+
+        font-size: 15px;
+
+    }
+

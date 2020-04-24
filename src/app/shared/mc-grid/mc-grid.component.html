@@ -1,0 +1,38 @@
+<kendo-grid [data]="mcData"
+                [pageSize]="state.take"
+                [skip]="state.skip"
+                [sort]="state.sort"
+                [sortable]="true"
+                [filter]="state.filter"
+                filterable="menu"
+                (dataStateChange)="mcStateChange($event)"
+                [pageable]="true"
+                [loading]="loadingIndicator"
+                [resizable]="true">
+
+                <ng-template kendoGridToolbarTemplate>
+                    <a #excel *ngIf="mcData" kendoGridExcelCommand  class="k-icon k-i-excel m-1"  style="float: right; cursor: pointer;color: green;"></a>  
+                    <a  class="k-icon k-i-reset" href="#" (click)="refreshGrid()"></a>
+                </ng-template>
+
+        <kendo-grid-column *ngFor="let column of columns"
+                           field="{{column.field }}"
+                           title="{{column.title}}"
+                           format="{{column.format}}"
+                           filter="{{column.type}}"
+                           width="150">
+
+            <ng-template kendoGridCellTemplate let-dataItem>
+                <span *ngIf="column.type=='date'; else showDate ">
+                    {{ dataItem[column.field] | date:'MM/dd/yyyy hh:mm:ss a' }}
+                </span>
+
+                <ng-template #showDate>
+                    {{ dataItem[column.field] }}
+                </ng-template>
+
+            </ng-template>
+
+        </kendo-grid-column>
+        <kendo-grid-excel fileName="MemberDeatil.xlsx"></kendo-grid-excel>
+    </kendo-grid>
